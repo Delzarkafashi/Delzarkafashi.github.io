@@ -85,6 +85,7 @@ li {
 
 .hamburger {
     position: relative;
+    display: none;
 }
 
 .menu-items {
@@ -102,13 +103,21 @@ li {
     margin: 0;
     display: flex;
     flex-direction: column;
+
+}
+.menu-item{
+    padding: 0 15px;
 }
 
+.menu{
+    display: flex;
+    justify-content: center;
+}
 
 
 /* styles.css */
 
-@media (min-width: 751px) and (min-height: 884px) {
+@media (max-width: 1120px) {
     .menu-item {
         display: block;
     }
@@ -116,6 +125,12 @@ li {
     .menu-item {
         display: inline-block;
         margin-right: 10px;
+    }
+    .hamburger{
+        display: inherit;
+    }  
+    .menu{
+        display: none;
     }
 }
 
