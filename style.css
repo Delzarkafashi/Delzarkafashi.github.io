@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -23,12 +25,79 @@ header {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    
+    text-align: center;
+    position: fixed;    
 }
+
+
+/*----------- BAR SOCIAL -----------*/
+.container-sm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sm a{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, .3);
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    margin: 0 4px;
+}
+
+.container-sm a i{
+    color: #000;
+    font-size: 15px;
+    line-height: 30px;
+}
+/*inlinkd*/
+.container-sm a:nth-child(1):hover{
+    opacity: 1;
+    background: #1877F2;
+    transform: translateY(-6px) scale(1.2);
+}
+/*facebok*/
+.container-sm a:nth-child(2):hover{
+    opacity: 1;
+    background: #1877F2;
+    transform: translateY(-6px) scale(1.2);
+}
+/*instgram*/
+.container-sm a:nth-child(3):hover{
+    opacity: 1;
+    background: rgb(255,0,172);
+    background: linear-gradient(222deg, rgba(255,0,172,1) 0%, rgba(252,176,69,1) 100%);
+    transform: translateY(-6px) scale(1.2);
+}
+
+/*för telefonnummern*/
+a {
+    color: rgb(0, 136, 255);
+    font-size: 18px; 
+  }
+
+/*--------   detta är för knappar
+.container-sm a:hover i{
+    color: #f1f5f9;
+}
+.menu li:hover{
+    opacity: 1;
+    background: rgb(255,0,172);
+    background: linear-gradient(222deg, rgba(255,0,172,1) 0%, rgba(252,176,69,1) 100%);
+    transform: translateY(-6px) scale(1.2);
+}-----------*/
+
+/*----------- SMARTPHONE/TABLET -----------*/
+
 
 
 
@@ -105,21 +174,41 @@ li {
     display: flex;
     flex-direction: column;
     opacity: 0.5;
+    
 
+}
+
+
+/* mellan rum mellan texten på meny*/
+.menu-items li:first-child{
+    margin-top: 40px;
+  
 }
 .menu-item{
     padding: 0 15px;
 
 }
-
 .menu{
     display: flex;
     justify-content: center;
 }
-.menu-items li:first-child{
-    margin-top: 40px;
-  
+
+
+
+
+
+/*för menyn text */
+div.menu-item a, ul.menu-items li a{
+    color: black;
+    font-size: 24px;
+    text-decoration: underline;
 }
+
+/* här ändra på iconen*/
+div.menu i, ul.menu-items i {
+    color: black;
+}
+
 
 
 /* styles.css */
@@ -141,12 +230,13 @@ li {
     }
 }
 
-@media (max-width: 750px) and (max-height: 883px) {
+/* @media (max-width: 750px) and (max-height: 883px) { */
     .menu-items li {
         margin-bottom: 1rem;
         font-size: 1.5rem;
         margin-left: 1rem;
     }
+    
 
     .hamburger input[type="checkbox"]:checked ~ .menu-items {
         display: block;
@@ -179,5 +269,5 @@ li {
     .hamburger input[type="checkbox"]:checked ~ .hamburgerlines .line3 {
         transform: rotate(-45deg);
     }
-}
+
 
