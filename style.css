@@ -1,3 +1,8 @@
+/* om man inte skriver nåt då kommer i ordning på sidan(postion;static)
+om man skriver fix så kommer den vara fast på bottem sidan
+sticky då är den kvar där man har ställt den och om den hamnar på överst eller på kant på sidan så kommer den förja med*/
+
+
 body {
     margin: 0;
     padding: 0;
@@ -25,11 +30,10 @@ header {
 footer {
     background-color: #333;
     color: #fff;
-    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
-    position: fixed;    
+    position: static;
 }
 
 
@@ -205,8 +209,13 @@ div.menu-item a, ul.menu-items li a{
 }
 
 /* här ändra på iconen*/
-div.menu i, ul.menu-items i {
+section.menu i, ul.menu-items i {
     color: black;
+}
+.meny-bild{
+    width: 30px;
+    height: 30px;
+    padding-bottom: -30px;
 }
 
 
