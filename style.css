@@ -170,7 +170,7 @@ li {
     transition: transform 0.5s ease-in-out;
     background: #fff;
     max-width: 400px;
-    width: 40%;
+    width: 30%;
     height: auto;
     /*overflow: scroll;*/
     padding: 0;
@@ -204,8 +204,8 @@ li {
 /*för menyn text */
 div.menu-item a, ul.menu-items li a{
     color: black;
-    font-size: 24px;
-    text-decoration: underline;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 /* här ändra på iconen*/
@@ -215,7 +215,6 @@ section.menu i, ul.menu-items i {
 .meny-bild{
     width: 30px;
     height: 30px;
-    padding-bottom: -30px;
 }
 
 
