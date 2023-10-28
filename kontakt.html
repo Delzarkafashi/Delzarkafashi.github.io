@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <main>
-                <h2>Välkommen till min startsida</h2>
+                <h2>Kontakt Info</h2>
                 
             </main>
         </div>
@@ -72,12 +72,13 @@
          
     </header>
     <div class="container">
-        <h1>Ni kan nå mig:</h1>
         <h4>min adress:</h4>
         <p>kisa 12345</p>
         <p>standgatank 2332</p>
 
-    <a href="tel:0709224098">Mobilnummer: 0709224098</a>
+    <a href="tel:0709224098">Mobilnummer: 0709224098</a><br>
+    <a href="mailto:Delzarkafashi@gmail.com">Kontakta oss via e-post</a>
+
     <br>
     <br>
         <div class="container-sm">
@@ -96,67 +97,32 @@
 
 
     <div class="hero">
+        <form method="post" action="process_form.php">
 
-        <form>
+          <div class="input-group">
+            <input type="text" name="namn" id="namn" required>
+            <label for="namn"><img class="fas" src="images/form/name-bild3.png" alt="icon för namn"></i> Namn</label>
+          </div>
 
-            <!--
-            <div class="rad">
-                <div class="input-group">
-                    <i style='font-size:24px; color: white;' class='fas'>&#xf406;</i>
-                    <input type="text" id="namn" required>
-                    <label for="namn">Namn</label>
-                  </div>
-                  
-                <div class="input-group">
-                    <i style='font-size:24px; color: white;' class='fas'>&#xf3cd;</i>
-                    <input type="text" id="nummer" required>
-                    <label for="nummer">Mobilnummer</label>
-                  </div>
-
-            </div>
-            det blir fel här  -->
-            
-            <!--
-            <div class="input-group">
-                <i style='font-size:24px; color: white;' class="fas">&#xf406;</i>
-                <input type="text" id="namn" required>
-                <label for="namn">Namn</label>
-              </div>
-            
-            <div class="input-group">
-                <div class="icon">
-                    <i style='font-size: 24px; color: white;' class="fas">&#xf406;</i>
-                </div>
-                <input type="text" id="namn" required>
-                <label for="namn">Namn</label>
-            </div>
-        -->
-               <div class="input-group">
-               <input type="text" id="namn" required>
-               <label for="namn">  <i style='font-size: 24px; color: white;' class="fas">&#xf406;</i> Namn</label>
-               </div>
-               <div class="input-group">
-                <input type="text" id="nummer" required>
-                <label for="nummer">  <i style='font-size:24px; color: white;' class='fas'>&#xf3cd;</i>Mobilnummer</label>
-            </div>
-
-            <div class="input-group">
-                <input type="text" id="email" required>
-                <label for="email"> <i style='font-size: 24px; color: white;' class='fas'>&#xf674;</i>Email</label>
-            </div>
-            <div class="input-group">
-
-                <textarea id="meddelande" rows="10"  required></textarea>
-                <label for="meddelande"> <i style='font-size:24px; color: white;' class='fab'>&#xf39f;</i>Ditt meddelande</label>
-            </div>
-           
-            <button type="skicka">skicka</button>
-
+          <div class="input-group">
+            <input type="text" name="nummer" id="nummer" required>
+            <label for="nummer"><img class="fas" src="images/form/phone-bild3.png" alt="icon för telfonnummer" ></i> Mobilnummer</label>
+          </div>
+          <div class="input-group">
+            <input type="text" name="email" id="email" required>
+            <label for="email"><img class="fas" src="images/form/mail-bild3.png" alt="icon för mail"></i> Email</label>
+          </div>
+          <div class="input-group">
+            <textarea name="meddelande" id="meddelande" rows="10" required></textarea>
+            <label for="meddelande"><img class="fab" src="images/form/message-bild2.png" alt="icon för meddelande"></i> Ditt meddelande</label>
+          </div>
+          <button type="submit">Skicka</button>
         </form>
-    </div>
+      </div>
+      
 
 
-    
+      
 
     <footer>
         <div class="container">
@@ -165,7 +131,8 @@
             <p>kisa 12345</p>
             <p>standgatank 2332</p>
 
-        <a href="tel:0709224098">Mobilnummer: 0709224098</a>
+        <a href="tel:0709224098">Mobilnummer: 0709224098</a><br>
+        <a href="mailto:Delzarkafashi@gmail.com">Kontakta oss via e-post</a>
         <br>
         <br>
             <div class="container-sm">
