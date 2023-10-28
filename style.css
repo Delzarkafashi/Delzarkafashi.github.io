@@ -339,7 +339,7 @@ li {
     left:-10px;
     transform: translateX(-100%);
     transition: transform 0.5s ease-in-out;
-    background: #fff;
+    background: #666666;
     max-width: 400px;
     width: auto;
     height: auto;
@@ -348,7 +348,7 @@ li {
     margin: 0;
     display: flex;
     flex-direction: column;
-    opacity: 0.5;
+    opacity: 0,9;
     
 }
 
@@ -373,7 +373,7 @@ li {
 
 /*för menyn text */
 div.menu-item a, ul.menu-items li a{
-    color: black;
+    color:black;
     font-size: 30px;
     text-decoration: none;
 }
@@ -429,7 +429,7 @@ section.menu i, ul.menu-items i {
     .hamburger input[type="checkbox"]:checked ~ .menu-items {
         display: block;
         transform: translate(0%);
-        background: #232323;
+        background: #666666;
     }
 
     .hamburger input[type="checkbox"]:checked ~ .hamburgerlines .lines {
