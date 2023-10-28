@@ -63,7 +63,6 @@ form{
    
 }
 
-
 .input-group{
     margin-top: 15px;
     margin-bottom: 30px;
@@ -92,8 +91,6 @@ textarea{
     
 }
  
-
-
 label{
     height: 100%;
     position: absolute;
@@ -111,7 +108,8 @@ textarea:valid~label {
     top: -25px;
     font-size: 24px;
 }
-label i{ color:white} 
+label i{ 
+    color:white} 
 /*
 .fas{   
     height: 100%;
@@ -142,8 +140,6 @@ button{
     margin-bottom: 5%;
 }
 
-
-
 input:focus~label,
 input:valid~label{
     top: -25px;
@@ -164,8 +160,6 @@ input:valid~label{
     flex-basis: 48%;
 }
 */
-
-
   
 .text-container {
     background-color: rgba(192, 231, 243, 0.219); 
@@ -347,7 +341,7 @@ li {
     transition: transform 0.5s ease-in-out;
     background: #fff;
     max-width: 400px;
-    width: 30%;
+    width: auto;
     height: auto;
     /*overflow: scroll;*/
     padding: 0;
@@ -356,7 +350,6 @@ li {
     flex-direction: column;
     opacity: 0.5;
     
-
 }
 
 
@@ -393,6 +386,16 @@ section.menu i, ul.menu-items i {
     width: 30px;
     height: 30px;
 }
+/* Exempel: Ändra textfärgen till blå när muspekaren hovrar över länken */
+.menu-item a:hover {
+    
+    color: blue; 
+    text-decoration: underline;
+  }
+  
+  
+
+
 
 
 
